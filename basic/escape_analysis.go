@@ -4,7 +4,7 @@ import "fmt"
 
 type User struct {
 	Name string
-	Age  *int
+	Age  int
 }
 
 type System struct {
@@ -22,7 +22,7 @@ func Call1(u *User) {
 
 //example2
 func Call2(u *User) int {
-	return *u.Age * 2
+	return u.Age * 2
 }
 
 // example3
@@ -35,7 +35,7 @@ func Call4(u *User) int {
 }
 
 func Call5(u *User) int {
-	return *u.Age * 2
+	return u.Age * 2
 }
 
 // example4
