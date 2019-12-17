@@ -1,6 +1,10 @@
 package basic
 
-import "testing"
+import (
+	"fmt"
+	"reflect"
+	"testing"
+)
 
 func TestStudent(t *testing.T) {
 	s := Student{
@@ -10,4 +14,13 @@ func TestStudent(t *testing.T) {
 	}
 	println(s.Greet())
 	Speak(&s)
+
+	var a interface{}
+	a = "dsa"
+	if a == nil{
+		fmt.Println("a is nil")
+	}else{
+		fmt.Println(reflect.TypeOf(a))
+	}
+
 }

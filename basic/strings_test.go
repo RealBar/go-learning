@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 	"testing"
-	"time"
 )
 
 func TestReplace(t *testing.T) {
@@ -12,6 +11,3 @@ func TestReplace(t *testing.T) {
 	fmt.Println(strings.Replace(a," ","",-1))
 }
 
-func TestRegex(t *testing.T) {
-	println(time.Now().Format(time.RFC3339))
-}
